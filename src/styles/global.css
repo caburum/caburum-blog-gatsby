@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+:root {
+	--color: #DDD;
+	--dark: #111;
+	--medium: #222;
+	--light: #333;
+	--link: #2a8b9d;
+}
+
+body {
+	font-family: 'Oxygen', sans-serif;
+	font-weight: 400;
+	margin: 0;
+	background-color: var(--dark);
+	color: var(--color);
+}
+
+header {
+	background-color: var(--medium);
+	padding: 1em;
+	text-align: center;
+}
+
+h1 {
+	font-weight: 700;
+	font-size: 1.5em;
+	margin: 0;
+}
+
+h2 {
+	font-weight: 700;
+	font-size: 1.25em;
+	margin: 0;
+}
+
+a {
+	color: var(--link);
+	text-decoration: none;
+}
