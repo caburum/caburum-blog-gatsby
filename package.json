@@ -2,7 +2,7 @@
 	"name": "caburum-blog-gatsby",
 	"description": "A basic blog system built using Gatsby",
 	"version": "0.1.0",
-	"license": "MIT",
+	"license": "SEE LICENSE IN LICENSE.MD",
 	"scripts": {
 		"build": "gatsby build",
 		"develop": "gatsby develop",
@@ -26,9 +26,6 @@
 	},
 	"devDependencies": {
 		"prettier": "2.2.1"
-	},
-	"prettier": {
-		"singleQuote": true
 	},
 	"bugs": {
 		"url": "https://github.com/caburum/caburum-blog-gatsby/issues"

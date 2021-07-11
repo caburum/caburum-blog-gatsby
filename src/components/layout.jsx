@@ -1,13 +1,12 @@
-import React, { useState } from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
+import React, { useState } from 'react'
+import { useStaticQuery, graphql } from 'gatsby'
 
-import ThemeToggler from './themetoggler';
-import { Helmet } from 'react-helmet';
-import Drawer from '@material-ui/core/Drawer';
+import ThemeToggler from './themetoggler'
+import { Helmet } from 'react-helmet'
 
-import * as style from './layout.module.css';
-import Logo from '../assets/logo.inline.svg';
-import { Menu as MenuButton } from '@material-ui/icons';
+import * as style from './layout.module.css'
+import Logo from '../assets/logo.inline.svg'
+import { Menu as MenuButton } from '@material-ui/icons'
 
 export default function Layout({
 	children,
@@ -26,9 +25,9 @@ export default function Layout({
 				}
 			}
 		}
-	`);
+	`)
 
-	const [menuOpen, setMenuOpen] = useState(false);
+	const [menuOpen, setMenuOpen] = useState(false)
 
 	return (
 		<>
@@ -39,24 +38,28 @@ export default function Layout({
 					<Logo
 						className={style.logo}
 						onClick={() => {
-							window.location.href = '/';
+							window.location.href = '/'
 						}}
 						alt={metadata.site.siteMetadata.title}
 					/>
 					<MenuButton
 						className={style.menuButton}
 						fontSize="large"
-						onClick={(_) => setMenuOpen(!menuOpen)}
+						onClick={_ => setMenuOpen(!menuOpen)}
 					/>
 				</div>
 			</div>
 			{/* Menu */}
 			<div
 				className={style.menu}
-				style={menuOpen ? null : {
-					boxShadow: 'none',
-					transform: 'translateX(18rem)'
-				}}
+				style={
+					menuOpen
+						? null
+						: {
+								boxShadow: 'none',
+								transform: 'translateX(18rem)',
+						  }
+				}
 			>
 				<h1>Hello</h1>
 			</div>
@@ -70,7 +73,7 @@ export default function Layout({
 				<div style={{ maxWidth: fullWidth ? 'unset' : null }}>{children}</div>
 			</div>
 		</>
-	);
+	)
 }
 
 /* <header>
