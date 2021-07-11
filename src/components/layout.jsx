@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 
-import { Helmet } from 'react-helmet';
 import ThemeToggler from './themetoggler';
+import { Helmet } from 'react-helmet';
+import Drawer from '@material-ui/core/Drawer';
 
 import * as style from './layout.module.css';
 import Logo from '../assets/logo.inline.svg';
@@ -28,16 +29,11 @@ export default function Layout({
 	`);
 
 	const [menuOpen, setMenuOpen] = useState(false);
-	function toggleMenu() {
-		setMenuOpen(!menuOpen);
-	}
-	useEffect(() => {
-		window.setMenuOpen = setMenuOpen;
-	}, []);
 
 	return (
 		<>
 			<Helmet />
+			{/* Navbar */}
 			<div className={style.wrapper}>
 				<div className={style.navbar}>
 					<Logo
@@ -50,10 +46,21 @@ export default function Layout({
 					<MenuButton
 						className={style.menuButton}
 						fontSize="large"
-						onClick={toggleMenu}
+						onClick={(_) => setMenuOpen(!menuOpen)}
 					/>
 				</div>
 			</div>
+			{/* Menu */}
+			<div
+				className={style.menu}
+				style={menuOpen ? null : {
+					boxShadow: 'none',
+					transform: 'translateX(18rem)'
+				}}
+			>
+				<h1>Hello</h1>
+			</div>
+			{/* Content area */}
 			<div
 				className={style.content}
 				style={{
