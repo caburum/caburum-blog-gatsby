@@ -1,6 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import Header from '../components/header';
+import Layout from '../components/layout';
 
 const monthNames = ['', 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
@@ -8,8 +8,7 @@ export default function Template({ data }) {
   const { markdownRemark } = data;
   const { frontmatter, html } = markdownRemark;
   return (
-    <>
-      <Header />
+    <Layout>
       <div className="blog-post">
         <h1>{frontmatter.title}</h1>
         <h2>
@@ -20,7 +19,7 @@ export default function Template({ data }) {
           dangerouslySetInnerHTML={{ __html: html }}
         />
       </div>
-    </>
+    </Layout>
   );
 }
 
