@@ -34,7 +34,7 @@ export default function Layout({
 		<>
 			<Helmet />
 			{/* Navbar */}
-			<div className={style.wrapper}>
+			<div className={style.navbarWrapper}>
 				<div className={style.navbar}>
 					<Logo
 						className={style.logo}
