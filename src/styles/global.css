@@ -1,17 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
 
 :root {
-	--accent: #2a8b9d;
-	--text: #ddd;
-	--link: #2a8b9d;
-	--bg: #111;
-	--fg: #333;
-
-	--nav-bg: #222;
-	--nav-accent: #2a8b9d;
-	--nav-text: #ddd;
 	--nav-height: 64px;
-
 	--transition: 225ms cubic-bezier(0, 0, 0.2, 1);
 }
 

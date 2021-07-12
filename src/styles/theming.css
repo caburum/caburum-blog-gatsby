@@ -1,0 +1,38 @@
+/* Color schemes */
+.dark {
+	--accent: #2a8b9d;
+	--text: #ddd;
+	--link: #2a8b9d;
+	--bg: #111;
+	--fg: #333;
+
+	--nav-bg: #222;
+	--nav-accent: #2a8b9d;
+	--nav-text: #ddd;
+}
+
+.light {
+	--accent: #028388;
+	--text: #111;
+	--link: #028388;
+	--bg: #E3E5E8;
+	--fg: #FCFCFC;
+
+	--nav-bg: #F2F3F5;
+	--nav-accent: #028388;
+	--nav-text: #111;
+}
+
+.hacker {
+	--accent: #11F412;
+	--text: #249825;
+	--link: #0F0;
+	--bg: #000;
+	--fg: #021202;
+
+	--nav-bg: #021502;
+	--nav-accent: #11F412;
+	--nav-text: #249825;
+}
+
+/* Fonts */

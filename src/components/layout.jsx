@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 
-import ThemeToggler from './themetoggler'
 import { Helmet } from 'react-helmet'
 
 import * as style from './layout.module.css'
