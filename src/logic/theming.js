@@ -1,7 +1,7 @@
 // Load current theme from local storage
 export function loadTheme() {
 	var theme = JSON.parse(localStorage.getItem('theme'))
-	if (!theme) setDefaultTheme()
+	if (!theme) return setDefaultTheme()
 	console.log(theme)
 	document.body.classList = `${theme.color} ${theme.font}`
 }
@@ -17,6 +17,7 @@ function setDefaultTheme() {
 			logo: 'standard',
 		})
 	)
+	loadTheme()
 }
 
 // Set theme
